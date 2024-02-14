@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Caution</title>
+ <style>
+    body { 
+        display: flex;
+        flex-direction: row;
+        background-image: url(background.jpg); 
+        background-repeat: no-repeat;   
+        background-size: cover;
+        align-items: center; 
+        justify-content: center; 
+        min-height: 100vh; 
+        
+    }
+
+    .left-side {
+        width: 50%;
+         
+    }
+
+    .right-side {
+        width: 50%; 
+        text-align: center;
+        background-color: rgba(202, 80, 127, 0.7); 
+        display: flex;          
+        align-items: center;  
+        justify-content: center;
+        flex-direction: column;
+        min-height: 50vh;
+        
+    }
+
+    img {
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-bottom: 20px;   
+    }
+    button {
+      background-color: #4CAF50; 
+      color: white; 
+      padding:  15px 30px; 
+      border: none; 
+      border-radius: 5px;
+      cursor: pointer; 
+    }
+    button:hover {
+      background-color: #3e8e41; 
+    }
+    @media (max-width: 768px) { 
+        body {
+            flex-direction: column; 
+        }
+        .left-side, .right-side {
+            width: 100%; 
+        }
+    }
+ </style>
+</head>
+<body>
+
+  <div class="left-side">
+    <img src="landing.jpg" alt="Ann">
+  </div>
+
+  <div class="right-side">
+    <h1>Annlyn Lendio</h1> 
+    <h3>Caution: Potential Inside</h3> 
+    <a href="resume.html">  <button class="action-button">View Resume</button>
+    </a> 
+  </div>
+
+</body>
+</html>
